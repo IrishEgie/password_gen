@@ -4,10 +4,15 @@ symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 
 print("Welcome to the PyPassword Generator!")
 nr_letters = int(input("How many letters would you like in your password?\n"))
-nr_symbols = int(input(f"How many symbols would you like?\n"))
-nr_numbers = int(input(f"How many numbers would you like?\n"))
+#nr_symbols = int(input(f"How many symbols would you like?\n"))
+#nr_numbers = int(input(f"How many numbers would you like?\n"))
 
 import random as rd
 
-pass_len = nr_numbers+nr_symbols+nr_letters
+pass_len = nr_letters
+
+for rep in range(1,nr_letters+1):
+    rd_l_num = rd.randint(0,len(letters))
+    pass_letters = letters[rd_l_num]
+    print(f"{pass_letters}")
 
