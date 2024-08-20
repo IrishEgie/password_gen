@@ -12,14 +12,11 @@ import random as rd
 pass_len = nr_letters+nr_symbols
 print("Your password is: ")
 for rep in range(1,nr_letters+1):
-    rd_l_num = rd.randint(0,len(letters)-1)
-    pass_letters = letters[rd_l_num]
+    pass_letters = rd.choice(letters)
     print(pass_letters, end='')
 for rep in range(1,nr_symbols+1):
-    rd_s_num = rd.randint(0,len(symbols)-1)
-    pass_symbols = symbols[rd_s_num]
+    pass_symbols = rd.choice(symbols)
     print(pass_symbols, end='')
 for rep in range(1,nr_numbers+1):
-    rd_n_num = rd.randint(0,len(numbers)-1)
-    pass_num = numbers[rd_n_num]
+    pass_num = rd.choice(numbers)
     print(pass_num, end='')

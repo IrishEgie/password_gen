@@ -11,11 +11,9 @@ import random as rd
 
 pass_len = nr_letters#+nr_symbols+nr_numbers
 
-rd_pass = []#final product
-
 for rep in range(0,pass_len+1):
-    rd_l = rd.randint(0,len(letters)-1)
-    rd_pass.insert(letters[rd_l])
+    rd_letter = rd.choice(letters)
+    
 
 
-print(rd_pass)
+print()
