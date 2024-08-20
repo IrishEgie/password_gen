@@ -20,6 +20,6 @@ for rep in range(1,nr_symbols+1):
     pass_symbols = symbols[rd_s_num]
     print(pass_symbols, end='')
 for rep in range(1,nr_numbers+1):
-    rd_n_num = rd.randint(0,len(symbols)-1)
+    rd_n_num = rd.randint(0,len(numbers)-1)
     pass_num = numbers[rd_n_num]
     print(pass_num, end='')
